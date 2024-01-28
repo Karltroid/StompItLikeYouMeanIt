@@ -1,0 +1,4 @@
+name: StompItLikeYouMeanIt
+version: '${project.version}'
+main: me.karltroid.stompitlikeyoumeanit.StompItLikeYouMeanIt
+api-version: '1.20'

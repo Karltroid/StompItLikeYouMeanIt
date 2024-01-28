@@ -1,0 +1,4 @@
+name: StompItLikeYouMeanIt
+version: '1.0'
+main: me.karltroid.stompitlikeyoumeanit.StompItLikeYouMeanIt
+api-version: '1.20'
