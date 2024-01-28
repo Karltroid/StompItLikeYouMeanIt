@@ -8,16 +8,17 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class StompItLikeYouMeanIt extends JavaPlugin implements Listener {
+public final class StompItLikeYouMeanIt extends JavaPlugin implements Listener
+{
 
     @Override
-    public void onEnable() {
-        // Plugin startup logic
+    public void onEnable()
+    {
         getServer().getPluginManager().registerEvents(this, this);
     }
 
     @EventHandler
-    private void onCropTrample(PlayerInteractEvent event)
+    private void onCropTrample(PlayerInteractEvent event) // detect the player trampling crops and cancel if sneaking
     {
         if (event.getAction() != Action.PHYSICAL) return;
         if (event.getPlayer().isSneaking()) return;
